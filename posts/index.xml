@@ -1,2 +1,130 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Blog about programming</title><link>https://dexprogramming.com/posts/</link><description>Blog about programming (Posts)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 17 Jun 2022 16:16:43 +0200</lastBuildDate><atom:link href="https://dexprogramming.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Static Site Generator</title><link>https://dexprogramming.com/posts/static-site-generator/</link><pubDate>Fri, 17 Jun 2022 16:16:43 +0200</pubDate><guid>https://dexprogramming.com/posts/static-site-generator/</guid><description>&lt;p>About Static Site Generators!
-This is my very first blog post :)&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Dex Programming</title><link>https://dexprogramming.com/posts/</link><description>Dex Programming (Posts)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 17 Jun 2022 16:16:43 +0200</lastBuildDate><atom:link href="https://dexprogramming.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>A Simple Hugo Site</title><link>https://dexprogramming.com/posts/a-simple-hugo-site/</link><pubDate>Fri, 17 Jun 2022 16:16:43 +0200</pubDate><guid>https://dexprogramming.com/posts/a-simple-hugo-site/</guid><description>&lt;p>Hugo is a Static Site Generator that allows us to create fast, content-oriented websites. In this simple example, we will create a Hugo site, post it for free on GitHub Pages and use a custom domain. The process is simple and consists of a series of steps, so let&amp;rsquo;s go(lang) in order:&lt;/p>
+&lt;p>&lt;em>You do not need to install Go to use Hugo as your static site generator.&lt;/em>&lt;/p>
+&lt;h1 id="1-install-hugo" >1. INSTALL HUGO
+&lt;span>
+&lt;a href="#1-install-hugo">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>There are instructions for all operating systems on the official website - &lt;a href="https://gohugo.io/getting-started/installing/#:~:text=Install%20Hugo%20on%20macOS%2C%20Windows,with%20support%20for%20multiple%20platforms.">Install Hugo&lt;/a>. I personally use Ubuntu 22.04, so I had to install &lt;a href="https://brew.sh/">Homebrew&lt;/a> first and then run the next command in the terminal:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>brew install hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="2-create-a-new-hugo-site" >2. CREATE A NEW HUGO SITE
+&lt;span>
+&lt;a href="#2-create-a-new-hugo-site">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>In the terminal, find the location where you want to create a new hugo site (for example Desktop) and run the appropriate command:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cd Desktop
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo new site &amp;lt;your_site_name&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="3-initialize-an-empty-git-repository" >3. INITIALIZE AN EMPTY GIT REPOSITORY
+&lt;span>
+&lt;a href="#3-initialize-an-empty-git-repository">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Now you need to initialize the empty git repository within the created Hugo site.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cd &amp;lt;your_site_name&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git init
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="4-install-a-theme" >4. INSTALL A THEME
+&lt;span>
+&lt;a href="#4-install-a-theme">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>You can find themes at the following link &lt;a href="https://themes.gohugo.io/">Hugo themes&lt;/a> and when you select the appropriate one run the following code (of course use the link from your theme instead of the one below):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git submodule add https://github.com/&amp;lt;git_user&amp;gt;/&amp;lt;your_theme_name&amp;gt;.git themes/ananke
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now if you open the themes folder, you can find the installed theme with the appropriate content. But in order for our site to use this theme, we need to edit the config.toml file and add the following line&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">theme&lt;/span> = &lt;span style="color:#e6db74">&amp;#39;&amp;lt;your_theme_name&amp;gt;&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="5-create-content-and-test-site" >5. CREATE CONTENT AND TEST SITE
+&lt;span>
+&lt;a href="#5-create-content-and-test-site">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>To make sure everything is working properly, we will create a few blog posts and launch the site locally.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>hugo new posts/first-blog-post.md
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo new posts/second-blog-post.md
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In order to see these posts we need to edit them and delete the following line:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">draft&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Now it&amp;rsquo;s time to test the Hugo site locally:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>hugo server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And we can visit the website at &lt;a href="">http://localhost:1313/&lt;/a>&lt;/p>
+&lt;h1 id="6-create-a-github-repository" >6. CREATE A GITHUB REPOSITORY
+&lt;span>
+&lt;a href="#6-create-a-github-repository">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Log in to your GitHub account and create a github repository.&lt;/p>
+&lt;h1 id="7-connect-local-and-github-repository" >7. CONNECT LOCAL AND GITHUB REPOSITORY
+&lt;span>
+&lt;a href="#7-connect-local-and-github-repository">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>Run the following git commands in the terminal:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git status
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#e6db74">&amp;#34;initial commit&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git branch -M main
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git remote add origin https://github.com/&amp;lt;your_github_name&amp;gt;/&amp;lt;yout_github_repo_name&amp;gt;.git/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push -u origin main
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And if you refresh the GitHub page you will see that everything has been uploaded.&lt;/p>
+&lt;h1 id="8-add-github-actions" >8. ADD GITHUB ACTIONS
+&lt;span>
+&lt;a href="#8-add-github-actions">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>After we add this script, every time you push the repository to GitHub, GitHub Actions will build the website automatically.&lt;/p>
+&lt;p>Create the following structure in your folder: &lt;code>.github/workflows/gh-pages.yml&lt;/code>&lt;/p>
+&lt;p>Then go to the official website, in the &lt;a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub&lt;/a> and copy the script to &lt;code>gh-pages.yml&lt;/code>.&lt;/p>
+&lt;p>Now you need to push all this into the GitHub Repository:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git status
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#e6db74">&amp;#34;github action&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>When workflow run successfully, it is necessary to select branch: &lt;code>gh-pages&lt;/code> in the settings/pages and save everything.&lt;/p>
+&lt;p>Also copy the link where the website was published, something like &lt;a href="">http://&amp;lt;your_github_name&amp;gt;.github.io/&amp;lt;your_repo_name&amp;gt;/&lt;/a>&lt;/p>
+&lt;h1 id="9-set-base-url" >9. SET BASE URL
+&lt;span>
+&lt;a href="#9-set-base-url">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>You need to configure the baseURL inside the &lt;code>config.toml&lt;/code> file and push it all on GitHub again.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-toml" data-lang="toml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">baseURL&lt;/span> = &lt;span style="color:#e6db74">&amp;#39;http://&amp;lt;your_github_name&amp;gt;.github.io/&amp;lt;yout_github_repo_name&amp;gt;/&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git status
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#e6db74">&amp;#34;baseURL change&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="10-set-a-custom-domain" >10. SET A CUSTOM DOMAIN
+&lt;span>
+&lt;a href="#10-set-a-custom-domain">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1>&lt;p>If you have a custom domain, it is necessary to link it to the GitHub site by creating several records:&lt;/p>
+&lt;ul>
+&lt;li>A record for &lt;strong>@&lt;/strong> pointing to &lt;em>185.199.108.153&lt;/em>&lt;/li>
+&lt;li>A record for &lt;strong>@&lt;/strong> pointing to &lt;em>185.199.109.153&lt;/em>&lt;/li>
+&lt;li>A record for &lt;strong>@&lt;/strong> pointing to &lt;em>185.199.110.153&lt;/em>&lt;/li>
+&lt;li>A record for &lt;strong>@&lt;/strong> pointing to &lt;em>185.199.111.153&lt;/em>&lt;/li>
+&lt;li>CNAME record for &lt;strong>www&lt;/strong> pointing to your &lt;em>username.github.io&lt;/em> (the username should be replaced with your actual GitHub account username):&lt;/li>
+&lt;/ul>
+&lt;p>For example for the Namecheap domain more information can be found on the following website - &lt;a href="https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/">link Namecheap domain to GitHub Pages&lt;/a>&lt;/p>
+&lt;p>Then enter the custom domain in the GitHub repository in settings/pages and save everything.&lt;/p>
+&lt;p>It is also necessary to create a CNAME file in the static folder in which there will be a custom domain (for example &amp;ldquo;custom-domain.com&amp;rdquo;).&lt;/p>
+&lt;p>Now change baseURL in &lt;code>config.toml&lt;/code> to custom domain and push everything on GitHub again.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git status
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git add .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git commit -m &lt;span style="color:#e6db74">&amp;#34;custom domain setup&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git push
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="and-that-is-all" >And that is all.
+&lt;span>
+&lt;a href="#and-that-is-all">
+&lt;svg viewBox="0 0 28 23" height="100%" width="19" xmlns="http://www.w3.org/2000/svg">&lt;path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>&lt;/svg>
+&lt;/a>
+&lt;/span>
+&lt;/h1></description></item></channel></rss>
