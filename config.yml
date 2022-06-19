@@ -1,5 +1,7 @@
 baseURL : 'https://dexprogramming.com/'
 languageCode : 'en-us'
-title : 'Blog about programming'
+title : 'Dex Programming'
 theme: 'anubis'
-googleAnalytics: "G-MP3X22K3C3"
+googleAnalytics: 'G-MP3X22K3C3'
+
+style: 'auto'
